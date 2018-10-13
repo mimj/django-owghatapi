@@ -9,10 +9,13 @@ License: BSD License
 Description: =====
         owghat-api
         =====
-        owghat-api is a django app for islamic times (owghat e shar'ee)
+        owghat-api is a django app for Islamic times (owghat e shar'ee)
         
         Quick start
         -----------
+        pip install django-owghatapi
+        
+        requirements: sqlparse,djangorestframework,pytz
         
         1. Add "owghatapi" to your INSTALLED_APPS setting like this::
         
@@ -23,7 +26,7 @@ Description: =====
         
         2. Include the owghatapi URLconf in your project urls.py like this::
         
-            path('owghat/', include('owghat.urls')),
+            path('owghatapi/', include('owghatapi.urls')),
         
         3. Run `python manage.py migrate` to create the owghat models and seed the DB .
         
@@ -35,7 +38,6 @@ Description: =====
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment
 Classifier: Framework :: Django
-Classifier: Framework :: Django :: X.Y
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
