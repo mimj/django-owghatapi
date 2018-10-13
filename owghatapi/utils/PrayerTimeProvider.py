@@ -14,7 +14,6 @@ class DatePrayerTime():
         time_array = ['Fajr', 'Sunrise', 'Dhuhr', 'Sunset', 'Maghrib', 'Midnight']
         time_dict = {}
         for i in time_array:
-            print(i + ': ' + times[i.lower()])
             time_dict[i.lower()] = times[i.lower()]
         return time_dict
 
@@ -30,7 +29,6 @@ class DatePrayerTime():
         time_array = ['Fajr', 'Sunrise', 'Dhuhr', 'Sunset', 'Maghrib', 'Midnight']
         time_dict = {}
         for i in time_array:
-            print(i + ': ' + times[i.lower()])
             time_dict[i.lower()] = times[i.lower()]
         return time_dict
 
